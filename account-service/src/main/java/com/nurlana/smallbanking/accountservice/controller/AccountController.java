@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AccountController {
 
     private final AccountService accountService;
-
     @GetMapping
     public ResponseEntity<?> getClientAccounts(@RequestHeader String clientCode) {
         return ResponseEntity.ok(accountService.getAccountsByClientCode(clientCode));

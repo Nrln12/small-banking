@@ -5,18 +5,18 @@ import com.nurlana.smallbanking.common.dto.AccountDto;
 import com.nurlana.smallbanking.common.entity.account.Account;
 import com.nurlana.smallbanking.common.exception.NotFoundException;
 import com.nurlana.smallbanking.common.repository.account.AccountRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
-@Service
 @Slf4j
-@RequiredArgsConstructor
+@Service
+@AllArgsConstructor
 public class AccountServiceImpl implements AccountService {
-
     private final AccountRepository accountRepository;
 
     @Override
